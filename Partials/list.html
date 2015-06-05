@@ -1,0 +1,25 @@
+﻿<table class="table table-striped">
+    <thead>
+        <tr>
+            <td>Name</td>
+            <td>Description</td>
+            <td style="padding-left: 10px;">
+                <a href="/Add"><i class="glyphicon glyphicon-plus-sign"></i></a>
+            </td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr ng-repeat="person in crew">
+            <td>{{person.name}}</td>
+            <td>{{person.description}}</td>
+            <td style="padding-left: 10px;">
+                <a href="/Edit/{{$index}}"><i class=" glyphicon glyphicon-edit"></i></a>
+            </td>
+        </tr>
+    </tbody>
+    <tfoot>
+        <tr>
+            <td>This is all about routing.</td>
+        </tr>
+    </tfoot>
+</table>
